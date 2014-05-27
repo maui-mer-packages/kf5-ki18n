@@ -41,6 +41,7 @@ KDE Frameworks 5 Tier 1 addon for localization.
 Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
+Requires:   gettext
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications |

@@ -55,6 +55,8 @@ SubPackages:
       Description: |
         The %{name}-devel package contains the files necessary to develop applications |
         that use %{name}.
+      Requires:
+          - gettext
       Files:
           - "%{_kf5_includedir}/ki18n_version.h"
           - "%{_kf5_includedir}/KI18n"
