@@ -77,7 +77,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc COPYING.LIB README.md
 %{_kf5_libdir}/libKF5I18n.so.*
-%{_kf5_qtplugindir}/kf5/ktranscript.so
+%{_kf5_qtplugindir}/ktranscript.so
 # >> files
 # << files
 
