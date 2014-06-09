@@ -46,7 +46,7 @@ RequiresPostUn:
 Files:
     - "%doc COPYING.LIB README.md"
     - "%{_kf5_libdir}/libKF5I18n.so.*"
-    - "%{_kf5_qtplugindir}/ktranscript.so"
+    - "%{_kf5_qtplugindir}/kf5/ktranscript.so"
 
 SubPackages:
     - Name: devel
