@@ -58,7 +58,7 @@ SubPackages:
         that use %{name}.
       Requires:
           - gettext
-          - python3
+          - python3-base
       Files:
           - "%{_kf5_includedir}/ki18n_version.h"
           - "%{_kf5_includedir}/KI18n"

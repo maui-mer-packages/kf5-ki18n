@@ -49,7 +49,7 @@ Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 Requires:   gettext
-Requires:   python3
+Requires:   python3-base
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications |
