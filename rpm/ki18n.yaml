@@ -25,6 +25,7 @@ PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
     - gettext-devel
+    - python3-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus
@@ -57,6 +58,7 @@ SubPackages:
         that use %{name}.
       Requires:
           - gettext
+          - python3
       Files:
           - "%{_kf5_includedir}/ki18n_version.h"
           - "%{_kf5_includedir}/KI18n"

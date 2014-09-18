@@ -38,6 +38,7 @@ BuildRequires:  pkgconfig(Qt5Script)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  gettext-devel
+BuildRequires:  python3-devel
 
 %description
 KDE Frameworks 5 Tier 1 addon for localization.
@@ -48,6 +49,7 @@ Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
 Requires:   gettext
+Requires:   python3
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications |
