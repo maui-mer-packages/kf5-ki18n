@@ -10,7 +10,7 @@ Name:       ki18n
 
 Summary:    KDE Frameworks 5 Tier 1 addon for localization
 Version:    5.3.0
-Release:    1
+Release:    2
 Group:      System/Base
 License:    GPLv2+
 URL:        http://www.kde.org
@@ -46,7 +46,7 @@ Requires:   gettext
 Requires:   python3-base
 
 %description devel
-The %{name}-devel package contains the files necessary to develop applications |
+The %{name}-devel package contains the files necessary to develop applications
 that use %{name}.
 
 
@@ -75,11 +75,15 @@ rm -rf %{buildroot}
 # >> install post
 # << install post
 
-%files
+%find_lang ki18n5_qt --with-qt --all-name || :
+
+%files -f ki18n5_qt.lang
 %defattr(-,root,root,-)
 %doc COPYING.LIB README.md
 %{_kf5_libdir}/libKF5I18n.so.*
 %{_kf5_plugindir}/*
+%dir %{_kf5_sharedir}/locale/*/LC_SCRIPTS
+%{_kf5_sharedir}/locale/*/LC_SCRIPTS/ki18n5/
 # >> files
 # << files
 
